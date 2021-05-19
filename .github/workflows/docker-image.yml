@@ -1,0 +1,17 @@
+name: Publish Documentation
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          VERSION="latest"
+          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
+          docker push ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
