@@ -73,6 +73,13 @@
 - Also load balancer works when using EKS cluster since it deploys a ELB.
 
 ![image](https://user-images.githubusercontent.com/55613494/118803484-06f74780-b8c1-11eb-9885-958b88ebb96d.png)
+- EKS Cluster built with terraform:
+
+![image](https://user-images.githubusercontent.com/55613494/118816740-1c27a280-b8d0-11eb-9d53-122225d125ad.png)
+
+- 
+
+
 
 
   
