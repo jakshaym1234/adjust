@@ -23,7 +23,7 @@ data "aws_availability_zones" "available" {
 }
 
 locals {
-  cluster_name = "test-eks-${random_string.suffix.result}"
+  cluster_name = "test-eks-adjust-112345"
 }
 
 resource "random_string" "suffix" {
@@ -32,7 +32,7 @@ resource "random_string" "suffix" {
 }
 
 resource "aws_security_group" "worker_group_mgmt_one" {
-  name_prefix = "worker_group_mgmt_one"
+  name_prefix = "worker_group_mgmt_one_adjust"
   vpc_id      = module.vpc.vpc_id
 
   ingress {
@@ -47,7 +47,7 @@ resource "aws_security_group" "worker_group_mgmt_one" {
 }
 
 resource "aws_security_group" "worker_group_mgmt_two" {
-  name_prefix = "worker_group_mgmt_two"
+  name_prefix = "worker_group_mgmt_two_adjust"
   vpc_id      = module.vpc.vpc_id
 
   ingress {
@@ -62,7 +62,7 @@ resource "aws_security_group" "worker_group_mgmt_two" {
 }
 
 resource "aws_security_group" "all_worker_mgmt" {
-  name_prefix = "all_worker_management"
+  name_prefix = "all_worker_management_adjust"
   vpc_id      = module.vpc.vpc_id
 
   ingress {
@@ -82,7 +82,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 2.47"
 
-  name                 = "test-vpc"
+  name                 = "test-vpc-adjust"
   cidr                 = "10.0.0.0/16"
   azs                  = data.aws_availability_zones.available.names
   private_subnets      = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
