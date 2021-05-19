@@ -17,6 +17,7 @@
 
 
 - Local image:
+
 ![image](https://user-images.githubusercontent.com/55613494/118781970-3d29cc80-b8ab-11eb-9ce9-5e13d554a907.png)
 
 - Testing locally. Container running.
@@ -25,6 +26,7 @@
 
 
 - App running
+
 ![image](https://user-images.githubusercontent.com/55613494/118781997-474bcb00-b8ab-11eb-8ca0-ccba8802d658.png)
 
 - Healthcheck up!!!
@@ -33,18 +35,21 @@
 
 
 - Running app as non-root user
+
 ![image](https://user-images.githubusercontent.com/55613494/118782029-50d53300-b8ab-11eb-853b-f41d5c841db0.png)
 
-Helm Charts for the Ruby App deploy:
+- Helm Charts for the Ruby App deploy:
 
 ![image](https://user-images.githubusercontent.com/55613494/118782065-56cb1400-b8ab-11eb-9a52-1561360cf06a.png)
 
-Deployed the Helm Chart to the minikube cluster:
+- Deployed the Helm Chart to the minikube cluster:
 
 ![image](https://user-images.githubusercontent.com/55613494/118782079-5a5e9b00-b8ab-11eb-884e-577d346bb528.png)
 
-Pods:
+- Pods:
+
 ![image](https://user-images.githubusercontent.com/55613494/118782103-60547c00-b8ab-11eb-9e9a-46afdc05a12a.png)
 
-Exposed the SVC as load balanced to maintain high availability. LB is still in pending state due to minikube installation:
+- Exposed the SVC as load balanced to maintain high availability. LB is still in pending state due to minikube installation:
+
 ![image](https://user-images.githubusercontent.com/55613494/118782123-64809980-b8ab-11eb-862e-fa4d0e9b5de6.png)
