@@ -10,11 +10,11 @@
 
 - Dockerfile
 
-![](RackMultipart20210519-4-17l5222_html_a109f7a2a0efef4f.png)
+![image](https://user-images.githubusercontent.com/55613494/118780217-7103f280-b8a9-11eb-8535-74063b56cf6d.png)
 
 - sh
 
-![](RackMultipart20210519-4-17l5222_html_faeac759fbcd8146.png)
+
 
 - Local image:
 
