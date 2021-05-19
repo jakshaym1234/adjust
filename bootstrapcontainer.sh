@@ -11,3 +11,6 @@ rm -fr adjust
 #push the container to registry username password from env variables for security
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 docker push jakshaym/rubyhttps:latest
+
+#Deploying the HELM CHART TO THE MINIKUBE CLUSTER
+helm install rubyhttps-chart .\rubyhttps\ --values .\rubyhttps\values.yaml
