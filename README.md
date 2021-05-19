@@ -66,6 +66,13 @@
 ![image](https://user-images.githubusercontent.com/55613494/118803027-7ae52000-b8c0-11eb-9b7a-e77add2d9395.png)
 ![image](https://user-images.githubusercontent.com/55613494/118803115-94866780-b8c0-11eb-9593-b39051ed97d8.png)
 
+- Pods deployed to the EKS cluster(they are in failed state due to the ruby http server code . Will try to fix them with better code to be deployed)
+
+![image](https://user-images.githubusercontent.com/55613494/118803363-e3340180-b8c0-11eb-98cb-60c8b54fc78e.png)
+
+- Also load balancer works when using EKS cluster since it deploys a ELB.
+
+![image](https://user-images.githubusercontent.com/55613494/118803484-06f74780-b8c1-11eb-9885-958b88ebb96d.png)
 
 
   
