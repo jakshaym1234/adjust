@@ -60,4 +60,12 @@
 
 
 ![image](https://user-images.githubusercontent.com/55613494/118784975-0c976200-b8ae-11eb-8b1e-13a6bad55f79.png)
+
+- Added Code to deploy the HELM chart to EKS cluster. EKS provisioned using TF. Helm Install also included as part of TF flow.
+
+![image](https://user-images.githubusercontent.com/55613494/118803027-7ae52000-b8c0-11eb-9b7a-e77add2d9395.png)
+![image](https://user-images.githubusercontent.com/55613494/118803115-94866780-b8c0-11eb-9593-b39051ed97d8.png)
+
+
+
   
