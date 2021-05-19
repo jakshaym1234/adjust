@@ -42,7 +42,6 @@ spec:
           #     path: /healthcheck
           #     port: 80
           # readinessProbe:
-          #   tcpSocket:
           #   httpGet:
           #     scheme: HTTP
           #     path: /healthcheck
