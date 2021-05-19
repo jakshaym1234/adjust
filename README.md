@@ -54,7 +54,10 @@
 
 ![image](https://user-images.githubusercontent.com/55613494/118782123-64809980-b8ab-11eb-862e-fa4d0e9b5de6.png)
 
-- Liveliness and Readiness probes are not working since the response coming from the application. Will try to use a diff ruby application
+- Liveliness and Readiness probes are not working since the response coming from the application is not well formed. Will try to use a diff ruby application giving proper https reponse. Commented the liveliness and readiness probe for now.
+
+![image](https://user-images.githubusercontent.com/55613494/118789175-233fb800-b8b2-11eb-828f-ef6f0115b8c2.png)
+
 
 ![image](https://user-images.githubusercontent.com/55613494/118784975-0c976200-b8ae-11eb-8b1e-13a6bad55f79.png)
   
