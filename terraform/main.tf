@@ -133,8 +133,8 @@ module "eks" {
   map_accounts                         = var.map_accounts
 }
 
-# resource "helm_release" "rubyhttps" {
-#   name  = "rubyhttps-chart"
-#   chart = "../rubyhttps"
-#   version    = "1.0.0"
-# }
+resource "helm_release" "rubyhttps" {
+  name  = "rubyhttps-chart"
+  chart = "../rubyhttps"
+  version    = "1.0.0"
+}
