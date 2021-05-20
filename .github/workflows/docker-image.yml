@@ -1,4 +1,4 @@
-name: Publish Documentation
+name: Docker Build And Push to DOCKER HUB
 
 on:
   push:
