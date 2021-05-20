@@ -1,7 +1,7 @@
 name: Terraform DESTROY
 on:
-  push:
-    
+  workflow_dispatch:
+  
 jobs:
   terraform-actions:
     name: Workflow
