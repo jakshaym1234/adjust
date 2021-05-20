@@ -136,4 +136,5 @@ module "eks" {
 resource "helm_release" "rubyhttps" {
   name  = "rubyhttps-chart"
   chart = "../rubyhttps"
+  version    = "1.0.0"
 }
