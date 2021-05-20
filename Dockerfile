@@ -11,8 +11,8 @@ RUN mkdir /usr/src/app
 #Copy git clone to the container
 COPY ./adjust/ /usr/src/app/
 
-#Expose 80 port
-EXPOSE 80
+#Expose 8000 port as port 80 cant be used by non root user
+EXPOSE 8000
 #Chaneg to Workd Dir
 WORKDIR /usr/src/app/
 # gem install bundler
@@ -21,10 +21,6 @@ RUN gem install bundler:1.11.2
 RUN bundle install
 # Change dir user
 RUN chown -R ruby_user:ruby_group /usr/src/app/
-#Allow Non Root user to bind on a 80 port
-RUN echo > /etc/authbind/byport/80
-RUN chown ruby_user:ruby_group /etc/authbind/byport/80
-RUN chmod 710 /etc/authbind/byport/80
 #Switch User
 USER ruby_user
 #Make bootstrap executable
