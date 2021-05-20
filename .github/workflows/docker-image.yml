@@ -14,10 +14,17 @@ jobs:
         uses: actions/checkout@v2
       - run: |
           VERSION="latest"
+          #make a temp dir
           mkdir adjust
+          #git clone the sample code
           git clone https://github.com/sawasy/http_server adjust
+          #login to push image to registry
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          #build the image locally
           docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
+          #push the image to docker hub
           docker push ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
+          #remove temp dir
           rm -fr adjust
+          #remove local docker image
           docker rmi -f ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
