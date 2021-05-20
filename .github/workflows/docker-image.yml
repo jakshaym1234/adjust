@@ -25,7 +25,7 @@ jobs:
           #git clone https://github.com/sawasy/http_server adjust
           #git clone https://github.com/IBM-Cloud/ruby-sinatra-helloworld.git adjust
           
-          git clone https://github.com/schneems/minimumviablerubywebserver.git adjust
+          git clone https://github.com/jakshaym1234/rubysampleadjust.git adjust
           
           #login to push image to registry
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
