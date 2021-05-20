@@ -1,6 +1,7 @@
 name: Terraform INIT PLAN APPLY with HELM CHART 
 
 on:
+  workflow_dispatch:
   push:
     branches:
     - main
