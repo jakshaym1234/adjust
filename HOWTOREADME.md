@@ -57,5 +57,7 @@
  - ![image](https://user-images.githubusercontent.com/55613494/118979038-aab22780-b995-11eb-8faf-61f900a026ba.png)
 
  - ![image](https://user-images.githubusercontent.com/55613494/118979132-c6b5c900-b995-11eb-8a0e-b41ce2dc07d0.png)
+ 
+- Write to me at kmjakshay@gmail.com if something is not working for you. Thanks
 
 
