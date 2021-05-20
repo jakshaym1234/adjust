@@ -24,7 +24,7 @@
 
 ![image](https://user-images.githubusercontent.com/55613494/118940704-99a1f000-b96e-11eb-92ba-9c1e4a220c57.png)
 
-- Step6: If you want to destroy the complete infra run the TF Destroy(if needed)
+- Step6: If you want to destroy the complete infra run the TF Destroy(if needed). Run on manual trigger.
 ![image](https://user-images.githubusercontent.com/55613494/118941034-f1405b80-b96e-11eb-9478-ded7e221ce8b.png)
 
 - Capture of Pipeline runs:
