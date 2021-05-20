@@ -18,15 +18,23 @@ jobs:
           VERSION="latest"
           #make a temp dir
           mkdir adjust
+          
           #git clone the sample code
-          git clone https://github.com/sawasy/http_server adjust
+          #commenting this code as its not working cause issues. using https://github.com/IBM-Cloud/ruby-sinatra-helloworld.git
+          #git clone https://github.com/sawasy/http_server adjust
+          git clone https://github.com/IBM-Cloud/ruby-sinatra-helloworld.git adjust
+          
           #login to push image to registry
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          
           #build the image locally
           docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
+          
           #push the image to docker hub
           docker push ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
+          
           #remove temp dir
           rm -fr adjust
+          
           #remove local docker image
           docker rmi -f ${{ secrets.DOCKER_USERNAME }}/rubyhttps:${VERSION}
