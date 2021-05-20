@@ -49,6 +49,6 @@
 
 - Unable to start the webserver to the the server bind. Will use better sample code to fix this.
 - FIX: Used code from this repo:
-- https://github.com/jakshaym1234/rubysampleadjust
-- Binded the application to port 8000 as the non root user cant bind to port 80
-- Added liveliness and readness port also to watch for /index
+  - https://github.com/jakshaym1234/rubysampleadjust
+  - Binded the application to port 8000 as the non root user cant bind to port 80
+  - Added liveliness and readness port also to watch for /index
