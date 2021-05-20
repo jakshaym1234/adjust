@@ -33,5 +33,10 @@ jobs:
       run: |
        cd terraform
        terraform init -backend-config="bucket=${{ secrets.STATE_BUCKET_NAME }}" -backend-config="key=${{ secrets.STATE_PATH }}"
-      continue-on-error: true
+
+    - name: Terraform Plan
+      id: Plan
+      run: |
+       cd terraform
+       terraform plan -backend-config="bucket=${{ secrets.STATE_BUCKET_NAME }}" -backend-config="key=${{ secrets.STATE_PATH }}"
 
