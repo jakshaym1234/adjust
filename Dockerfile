@@ -11,8 +11,8 @@ RUN mkdir /usr/src/app
 #Copy git clone to the container
 COPY ./adjust/ /usr/src/app/
 
-#Expose 4567 port
-EXPOSE 4567
+#Expose 8000 port
+EXPOSE 8000
 #Chaneg to Workd Dir
 WORKDIR /usr/src/app/
 # gem install bundler
@@ -24,6 +24,6 @@ RUN chown -R ruby_user:ruby_group /usr/src/app/
 #Switch User
 USER ruby_user
 #Make bootstrap executable
-RUN chmod +x helloWorld.rb
+RUN chmod +x server.rb
 #Start the server
-CMD ["ruby", "helloWorld.rb"]
+CMD ["ruby", "server.rb"]
