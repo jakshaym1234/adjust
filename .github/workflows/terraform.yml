@@ -1,12 +1,12 @@
-name: Terraform
+name: Terraform INIT PLAN APPLY with HELM CHART 
 
 on:
   push:
-  pull_request:
-  workflow_dispatch:
-  paths:
-  - 'terraform/**'
-
+    branches:
+    - main
+    paths:
+    - 'terraform/**'
+    
 jobs:
   terraform-actions:
     name: Workflow
