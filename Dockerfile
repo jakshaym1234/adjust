@@ -11,8 +11,8 @@ RUN mkdir /usr/src/app
 #Copy git clone to the container
 COPY ./adjust/ /usr/src/app/
 
-#Expose 80 port
-EXPOSE 80
+#Expose 4567 port
+EXPOSE 4567
 #Chaneg to Workd Dir
 WORKDIR /usr/src/app/
 # gem install bundler
