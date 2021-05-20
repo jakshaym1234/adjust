@@ -40,3 +40,7 @@
 ![image](https://user-images.githubusercontent.com/55613494/118942032-f9e56180-b96f-11eb-8df7-68bb0b2cefa7.png)
 
 - Unable to start the webserver to the the server bind. Will use better sample code to fix this.
+- FIX: Used code from this repo:
+- https://github.com/jakshaym1234/rubysampleadjust
+- Binded the application to port 8000 as the non root user cant bind to port 80
+- Added liveliness and readness port also to watch for /index
