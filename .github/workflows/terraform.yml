@@ -32,4 +32,4 @@ jobs:
       id: init
       run: terraform init
       continue-on-error: true
-      path: s/${{ parameters.repositoryName }}/terraform
+
