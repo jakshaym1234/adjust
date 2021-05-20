@@ -31,3 +31,9 @@
 ![image](https://user-images.githubusercontent.com/55613494/118941185-1765fb80-b96f-11eb-83b3-6d2a9494016b.png)
 ![image](https://user-images.githubusercontent.com/55613494/118941242-25b41780-b96f-11eb-8944-b3ba65811ce6.png)
 ![image](https://user-images.githubusercontent.com/55613494/118941286-306eac80-b96f-11eb-93fd-b7674c87c94e.png)
+
+- Deployed with TF:
+![image](https://user-images.githubusercontent.com/55613494/118941853-ca365980-b96f-11eb-81e4-23824bd98d24.png)
+![image](https://user-images.githubusercontent.com/55613494/118941903-d91d0c00-b96f-11eb-9051-4aa3a227ba70.png)
+![image](https://user-images.githubusercontent.com/55613494/118942032-f9e56180-b96f-11eb-8df7-68bb0b2cefa7.png)
+- Unable to start the webserver to the the server bind. Will use better sample code to fix this.
