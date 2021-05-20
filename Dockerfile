@@ -21,6 +21,10 @@ RUN gem install bundler:1.11.2
 RUN bundle install
 # Change dir user
 RUN chown -R ruby_user:ruby_group /usr/src/app/
+#Allow Non Root user to bind on a 80 port
+RUN echo > /etc/authbind/byport/80
+RUN chown ruby_user:ruby_group /etc/authbind/byport/80
+RUN chmod 710 /etc/authbind/byport/80
 #Switch User
 USER ruby_user
 #Make bootstrap executable
