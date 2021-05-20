@@ -15,11 +15,15 @@ COPY ./adjust/ /usr/src/app/
 EXPOSE 80
 #Chaneg to Workd Dir
 WORKDIR /usr/src/app/
+# gem install bundler
+RUN gem install bundler
+#bundle install
+RUN bundle install
 # Change dir user
 RUN chown -R ruby_user:ruby_group /usr/src/app/
 #Switch User
 USER ruby_user
 #Make bootstrap executable
-RUN chmod +x http_server.rb
+RUN chmod +x helloWorld.rb
 #Start the server
-CMD ["ruby", "http_server.rb"]
+CMD ["ruby", "helloWorld.rb"]
