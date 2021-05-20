@@ -16,7 +16,7 @@ EXPOSE 80
 #Chaneg to Workd Dir
 WORKDIR /usr/src/app/
 # gem install bundler
-RUN gem install bundler
+RUN gem install bundler:1.11.2
 #bundle install
 RUN bundle install
 # Change dir user
