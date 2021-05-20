@@ -32,6 +32,6 @@ jobs:
       id: init
       run: |
        cd terraform
-       terraform init -backend-config="bucket=${{ secrets.STATE_BUCKET_NAME}}" -backend-config="path=${{ secrets.STATE_PATH}}"
+       terraform init -backend-config="bucket=${{ secrets.STATE_BUCKET_NAME }}" -backend-config="key=${{ secrets.STATE_PATH }}"
       continue-on-error: true
 
