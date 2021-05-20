@@ -1,5 +1,5 @@
 #From latest RUBY container
-FROM ruby:latest
+FROM ruby:2.1.9
 
 #Create Group
 RUN addgroup --gid 1000 ruby_group
