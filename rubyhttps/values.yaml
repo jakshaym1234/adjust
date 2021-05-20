@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: LoadBalancer
-  port: 80
+  port: 8000
 
 ingress:
   enabled: false
@@ -51,7 +51,7 @@ ingress:
       - path: /
         backend:
           serviceName: chart-example.local
-          servicePort: 80
+          servicePort: 8000
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
