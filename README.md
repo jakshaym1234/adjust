@@ -74,26 +74,6 @@
 
 ![image](https://user-images.githubusercontent.com/55613494/118816740-1c27a280-b8d0-11eb-9d53-122225d125ad.png)
 
-- Now on to automating the flow using GitHub Action CI(How to replicate this at your end):
-- Step1: Setup the following secrets for secret injection into pipeline in a secure way.
--   1. DOCKER HUB USERNAME - to push image to docker hub
--   2. DOCKER HUB PASSWORD- to push image to docker hub
--   3. AWS_ACCESS_KEY_ID- for terraform to provision EKS CLUSTER
--   4. AWS_SECRET_ACCESS_KEY- for terraform to provision EKS CLUSTER
--   5. STATE_BUCKET_NAME - where TF will store its state file(S3 bucket was setup from portal)
--   6. STATE_PATH - where TF will store its state file(S3 bucket was setup from portal)
-  
-  ![image](https://user-images.githubusercontent.com/55613494/118939250-18962900-b96d-11eb-9185-07587506fcb4.png)
- 
-- Step2: Setup bucket with proper permission to store state file
- ![image](https://user-images.githubusercontent.com/55613494/118939951-dae5d000-b96d-11eb-8af5-865f6ea35a7b.png)
-
-- Step3: All Github action pipeline YML are in 
-![image](https://user-images.githubusercontent.com/55613494/118940095-0072d980-b96e-11eb-858c-e69e9de13f4f.png)
-
-- Step4: Docker Image build pipeline
-- Trigger whenever Dockerfile in the repo is update.Comment explain what each step does.
-![image](https://user-images.githubusercontent.com/55613494/118940334-3b750d00-b96e-11eb-978b-551fa5584afe.png)
 
 
 
