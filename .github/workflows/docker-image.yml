@@ -23,7 +23,9 @@ jobs:
           #git clone the sample code
           #commenting this code as its not working cause issues. using https://github.com/IBM-Cloud/ruby-sinatra-helloworld.git
           #git clone https://github.com/sawasy/http_server adjust
-          git clone https://github.com/IBM-Cloud/ruby-sinatra-helloworld.git adjust
+          #git clone https://github.com/IBM-Cloud/ruby-sinatra-helloworld.git adjust
+          
+          git clone https://github.com/schneems/minimumviablerubywebserver.git adjust
           
           #login to push image to registry
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
