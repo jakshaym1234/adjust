@@ -33,6 +33,14 @@
 ![image](https://user-images.githubusercontent.com/55613494/118941242-25b41780-b96f-11eb-8944-b3ba65811ce6.png)
 ![image](https://user-images.githubusercontent.com/55613494/118941286-306eac80-b96f-11eb-93fd-b7674c87c94e.png)
 
+- Using new sample application, Pods are in ready state:
+![image](https://user-images.githubusercontent.com/55613494/118959487-fd80e480-b97f-11eb-9054-0a6808a20b17.png)
+
+- Live and Ready probes are working
+![image](https://user-images.githubusercontent.com/55613494/118959633-230dee00-b980-11eb-9274-b52a2b5d5989.png)
+
+
+
 - Deployed with TF:
 
 ![image](https://user-images.githubusercontent.com/55613494/118941853-ca365980-b96f-11eb-81e4-23824bd98d24.png)
